@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/punkAnimeshnik/AppStarter/issues"
   },
-  "homepage": "https://github.com/punkAnimeshnik/AppStarter#readme"
+  "homepage": "https://github.com/punkAnimeshnik/AppStarter#readme",
+  "devDependencies": {
+    "less": "^3.11.2",
+    "vue": "^2.6.11",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
 }
