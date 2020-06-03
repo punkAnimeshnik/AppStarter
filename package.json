@@ -1,0 +1,24 @@
+{
+  "name": "appstarter",
+  "version": "1.0.0",
+  "description": "Test AppStarter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/punkAnimeshnik/AppStarter.git"
+  },
+  "keywords": [
+    "js",
+    "vue.js",
+    "webpack"
+  ],
+  "author": "Ilia Kolomiiets <ilia.kolomiiets2015@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/punkAnimeshnik/AppStarter/issues"
+  },
+  "homepage": "https://github.com/punkAnimeshnik/AppStarter#readme"
+}
