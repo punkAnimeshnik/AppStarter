@@ -1,0 +1,133 @@
+@import "fonts.css";
+
+body{
+  margin: 0;
+  padding: 0;
+}
+header{
+background-image: url("../source/Background.jpg");
+  background-size: cover;
+  height: 720px;
+.nav_panel{
+  max-width: 1170px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: baseline;
+  color: #ffffff;
+  font-family: "Nunito Sans";
+  .logo{
+    flex-grow: 1;
+    font-size: 20px;
+    padding: 0;
+    justify-content: flex-start;
+  }
+  .menu{
+    flex-grow: 5;
+    justify-content: flex-end;
+    text-align: right;
+    a{
+      color: #ffffff;
+      font-family: "Nunito Sans";
+      text-decoration: none;
+      font-size: 15px;
+      padding: 0 15px;
+    }
+    button{
+      font-family: Nunito Sans;
+      font-weight: bold;
+      font-size: 14px;
+      text-align: center;
+      color: #282B31;
+      background: #FFFFFF;
+      border:none;
+      border-radius: 6px;
+      width: 132px;
+      height: 40px;
+      margin: 0 15px;
+    }
+
+  }
+}
+
+  .baner{
+    max-width: 1170px;
+    display: flex;
+    flex-direction: row;
+    margin: 75px auto 0;
+    color: #ffffff;
+    padding: 0;
+    font-family: "Nunito Sans";
+    .intro{
+      width: 555px;
+      height: 310px;
+      margin-top: 100px ;
+      line-height: 50px;
+      letter-spacing: 1px;
+      .logo{
+        margin: 0;
+      }
+      .text{
+        margin: 0;
+        h1{
+          margin: 0;
+          font-size: 35px;
+          line-height: 50px;
+          font-weight: 400;
+          letter-spacing: 1px;
+        }
+        h1:first-child{
+          float: left;
+          font-weight: bold;
+          margin: 0;
+
+        }
+      }
+      .buttons{
+        margin-top: 37px;
+        button{
+          border: none;
+          background: #FFFFFF;
+          border-radius: 6px;
+          font-family: Nunito Sans;
+          font-weight: bold;
+          font-size: 17px;
+          text-align: center;
+          height: 50px;
+          padding: 15px;
+          margin: 0 10px;
+        }
+        button:first-child{
+          margin-left: 0;
+          background: linear-gradient(163.33deg, #FF8E64 0%, #FFE641 100%);
+          color: #ffffff;
+        }
+      }
+
+     }
+    .tablet{
+      margin: 0 50px;
+      .phone{
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.0001) 96.24%, rgba(32, 33, 39, 0.03) 100%), #FFFFFF;
+        box-shadow: inset 0px -2px 8px rgba(40, 43, 49, 0.1);
+        box-shadow:  -3px 3px 8px rgba(40, 43, 49, 0.15);
+        padding: 65px 18px;
+        border-radius: 50px;
+        margin-bottom: 25px;
+        .scrin{
+
+          img{
+           border: 3px #E7E8EA solid;
+            border-radius: 1px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .nav_panel, .baner{
+      padding: 0 15px;
+    }
+}
+}

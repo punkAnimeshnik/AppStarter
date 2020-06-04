@@ -14,7 +14,7 @@ module.exports = {
         timer: './AppStarter.js'
     },
     output:{
-        filename: "[name].[contenthash].js",
+        filename: "[name].[hash].js",
         path: path.resolve(__dirname, 'dist')
     },
     plugins: [
@@ -23,7 +23,7 @@ module.exports = {
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
-                filename: "[name].[contenthash].css"
+                filename: "[name].[hash].css"
             }
         )
     ],
@@ -62,6 +62,10 @@ module.exports = {
             {
                 test: /\.vue$/,
                 use: ['vue-loader']
+            },
+            {
+                test: /\.(ttf|woff|woff2|eot)$/,
+                use: ['file-loader']
             },
             {
                 test: /\.(png|svg|jpg|gif)$/,
