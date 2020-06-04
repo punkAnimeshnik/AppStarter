@@ -1,4 +1,5 @@
 @import "fonts.css";
+@import "../source/fonts/aweson/css/font-awesome.css";
 
 body{
   margin: 0;
@@ -62,7 +63,7 @@ background-image: url("../source/Background.jpg");
   }
 }
 
-  .baner{
+  .banner{
     max-width: 1170px;
     display: flex;
     flex-direction: row;
@@ -133,11 +134,7 @@ background-image: url("../source/Background.jpg");
       }
     }
   }
-  @media (max-width: 1200px) {
-    .nav_panel, .baner{
-      padding: 0 15px;
-    }
-}
+
   }
 }
 main{
@@ -204,4 +201,63 @@ main{
   }
 
 
+}
+footer{
+  background-color: #ffffff;
+  border: 1px solid #E7E8EA;
+  .footer{
+    display: flex;
+    max-width: 1170px;
+    height: 110px;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-family: Nunito Sans;
+    .logo{
+      font-size: 20px;
+      padding: 0;
+      font-weight: 800;
+      h2{
+        margin: 0;
+      }
+    }
+    .sign{
+      text-align: center;
+      font-size: 11px;
+      color: #999EA8;
+      i{
+        color: #FF4876;;
+      }
+      .name{
+        color:#282B31;
+        font-weight: 900;
+      }
+    }
+    .social_icons{
+      display: flex;
+      i{
+        font-size: 18px;
+        color: #B9BDC3;
+      }
+      .icon{
+        padding: 10px;
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #E7E8EA;
+        box-sizing: border-box;
+      }
+      .icon:first-child{
+        border-radius: 6px 0px 0px 6px;
+      }
+      .icon:last-child{
+        border-radius: 0px 6px 6px 0px;
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .nav_panel, .banner, .intro, .contact, .footer{
+    padding: 0 15px;
+  }
 }
