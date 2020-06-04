@@ -3,15 +3,22 @@
 body{
   margin: 0;
   padding: 0;
+  background-color:  #F2F2F2;
 }
 header{
+  height: 850px;
+  margin-bottom: 60px;
+
+  .background{
 background-image: url("../source/Background.jpg");
   background-size: cover;
   height: 720px;
+    padding-top: 25px;
 .nav_panel{
   max-width: 1170px;
   display: flex;
   flex-direction: row;
+  height: 40px;
   margin: 0 auto;
   justify-content: space-between;
   align-items: baseline;
@@ -22,6 +29,10 @@ background-image: url("../source/Background.jpg");
     font-size: 20px;
     padding: 0;
     justify-content: flex-start;
+    h2{
+      margin: 0;
+    }
+
   }
   .menu{
     flex-grow: 5;
@@ -32,7 +43,7 @@ background-image: url("../source/Background.jpg");
       font-family: "Nunito Sans";
       text-decoration: none;
       font-size: 15px;
-      padding: 0 15px;
+      margin: 0 15px;
     }
     button{
       font-family: Nunito Sans;
@@ -74,14 +85,12 @@ background-image: url("../source/Background.jpg");
           margin: 0;
           font-size: 35px;
           line-height: 50px;
-          font-weight: 400;
+          font-weight: 100;
           letter-spacing: 1px;
         }
-        h1:first-child{
-          float: left;
-          font-weight: bold;
+        .bold{
+          font-weight: 900;
           margin: 0;
-
         }
       }
       .buttons{
@@ -114,7 +123,6 @@ background-image: url("../source/Background.jpg");
         box-shadow:  -3px 3px 8px rgba(40, 43, 49, 0.15);
         padding: 65px 18px;
         border-radius: 50px;
-        margin-bottom: 25px;
         .scrin{
 
           img{
@@ -130,4 +138,70 @@ background-image: url("../source/Background.jpg");
       padding: 0 15px;
     }
 }
+  }
+}
+main{
+  margin-top: 120px;
+  .contact{
+    margin-bottom: 113px;
+    .title{
+      max-width: 570px;
+      margin: 0 auto;
+      justify-content: center;
+      h1{
+        text-align: center;
+        width: 570px;
+        font-weight: 100;
+        font-family: Nunito Sans;
+        font-size: 35px;
+        color: #282B31;
+        margin: 0;
+      }
+      .bold{
+        font-weight: 900;
+        margin: 0;
+      }
+      p{
+        margin: 17px auto 60px;
+        font-family: Nunito Sans;
+        font-size: 16px;
+        text-align: center;
+        line-height: 30px;
+        color: #676C75;
+      }
+    }
+    .form{
+      max-width: 770px;
+      margin: 0 auto;
+      background-color: #FFFFFF;
+      text-align: center;
+      border-radius: 6px;
+      padding: 40px 0;
+      form{
+        margin: 0 auto 30px;
+        input{
+          font-family: Nunito Sans;
+          font-size: 17px;
+          height: 50px;
+          border-radius: 6px;
+          margin: auto  10px;
+        }
+        input[type = text]{
+          min-width: 300px;
+          background: #F8F9FA;
+          border: 1px solid #E7E8EA;
+          box-sizing: border-box;
+          padding-left: 20px;
+      }
+        input[type = button]{
+          padding:13px 25px;
+          background: linear-gradient(163.14deg, #FF8E64 0%, #FFE641 100%);
+          border: none;
+        }
+      }
+
+    }
+  }
+
+
 }
