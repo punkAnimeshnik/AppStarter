@@ -2,6 +2,7 @@ const path = require('path')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const { VueLoaderPlugin } = require('vue-loader')
 
 const isDev = process.env.NODE_ENV === "development"
 
@@ -18,6 +19,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist')
     },
     plugins: [
+        new VueLoaderPlugin(),
         new HTMLWebpackPlugin({
             template: './index.html'
         }),
@@ -61,7 +63,12 @@ module.exports = {
             },
             {
                 test: /\.vue$/,
-                use: ['vue-loader']
+                loader: 'vue-loader',
+                options:{
+                    loader: {
+                        less: 'vue-style-loader!css-loader!less-loader'
+                    }
+                }
             },
             {
                 test: /\.(ttf|woff|woff2|eot)$/,
