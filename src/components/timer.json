@@ -1,11 +1,16 @@
-{
-  "timers": [
+  [
     {
-      "id": "845",
+      "id": "0",
       "name": "ilia",
-      "start": "4:18:15:25",
-      "time": "0:0:0",
-      "pauseplay": "true"
+      "start": 1591609977996,
+      "time": "0",
+      "pauseplay": true
+    },
+    {
+      "id": "1",
+      "name": "vlad",
+      "start": 1591611573498,
+      "time": "10",
+      "pauseplay": true
     }
-  ]
-}
+]

@@ -3,11 +3,15 @@ const HTMLWebpackPlugin = require('html-webpack-plugin')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const { VueLoaderPlugin } = require('vue-loader')
+const fs = require('fs');
+
+
 
 const isDev = process.env.NODE_ENV === "development"
 
 
 module.exports = {
+
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
     entry: {

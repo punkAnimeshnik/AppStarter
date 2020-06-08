@@ -9,7 +9,6 @@ body{
 header{
   height: 850px;
   margin-bottom: 60px;
-
   .background{
 background-image: url("../source/Background.jpg");
   background-size: cover;
@@ -33,7 +32,6 @@ background-image: url("../source/Background.jpg");
     h2{
       margin: 0;
     }
-
   }
   .menu{
     flex-grow: 5;
@@ -47,6 +45,7 @@ background-image: url("../source/Background.jpg");
       margin: 0 15px;
     }
     button{
+      cursor:pointer;
       font-family: Nunito Sans;
       font-weight: bold;
       font-size: 14px;
@@ -59,10 +58,8 @@ background-image: url("../source/Background.jpg");
       height: 40px;
       margin: 0 15px;
     }
-
   }
 }
-
   .banner{
     max-width: 1170px;
     display: flex;
@@ -97,6 +94,7 @@ background-image: url("../source/Background.jpg");
       .buttons{
         margin-top: 37px;
         button{
+          cursor:pointer;
           border: none;
           background: #FFFFFF;
           border-radius: 6px;
@@ -114,8 +112,7 @@ background-image: url("../source/Background.jpg");
           color: #ffffff;
         }
       }
-
-     }
+    }
     .tablet{
       margin: 0 50px;
       .phone{
@@ -125,7 +122,6 @@ background-image: url("../source/Background.jpg");
         padding: 65px 18px;
         border-radius: 50px;
         .scrin{
-
           img{
            border: 3px #E7E8EA solid;
             border-radius: 1px;
@@ -134,7 +130,6 @@ background-image: url("../source/Background.jpg");
       }
     }
   }
-
   }
 }
 main{
@@ -167,40 +162,15 @@ main{
         color: #676C75;
       }
     }
-    .form{
+    .cont{
       max-width: 770px;
       margin: 0 auto;
       background-color: #FFFFFF;
       text-align: center;
       border-radius: 6px;
       padding: 40px 0;
-      form{
-        margin: 0 auto 30px;
-        input{
-          font-family: Nunito Sans;
-          font-size: 17px;
-          height: 50px;
-          border-radius: 6px;
-          margin: auto  10px;
-        }
-        input[type = text]{
-          min-width: 300px;
-          background: #F8F9FA;
-          border: 1px solid #E7E8EA;
-          box-sizing: border-box;
-          padding-left: 20px;
-      }
-        input[type = button]{
-          padding:13px 25px;
-          background: linear-gradient(163.14deg, #FF8E64 0%, #FFE641 100%);
-          border: none;
-        }
-      }
-
     }
   }
-
-
 }
 footer{
   background-color: #ffffff;
@@ -225,9 +195,7 @@ footer{
       text-align: center;
       font-size: 11px;
       color: #999EA8;
-      i{
-        color: #FF4876;;
-      }
+      i{color: #FF4876;}
       .name{
         color:#282B31;
         font-weight: 900;
@@ -247,17 +215,10 @@ footer{
         border: 1px solid #E7E8EA;
         box-sizing: border-box;
       }
-      .icon:first-child{
-        border-radius: 6px 0px 0px 6px;
-      }
-      .icon:last-child{
-        border-radius: 0px 6px 6px 0px;
-      }
+      .icon:first-child{border-radius: 6px 0px 0px 6px;}
+      .icon:last-child{border-radius: 0px 6px 6px 0px;}
     }
   }
 }
 @media (max-width: 1200px) {
-  .nav_panel, .banner, .intro, .contact, .footer{
-    padding: 0 15px;
-  }
-}
+  .nav_panel, .banner, .intro, .contact, .footer{padding: 0 15px;}}
